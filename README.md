@@ -19,9 +19,7 @@ The repository is organized as follows:
 - Each problem is in its own directory (e.g., `problem-001`).
 - Each problem directory contains:
   - `problem.md`: A markdown file with the problem statement.
-  - `solution.py`: Solution in Python.
   - `solution.cpp`: Solution in C++.
-  - `solution.java`: Solution in Java.
 
 ## Note on Solutions
 
