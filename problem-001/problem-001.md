@@ -1,52 +1,39 @@
-# Problem: Find Players With Zero or One Losses
+# Minimum Falling Path Sum
 
-## Problem Description
+## Problem Statement
 
-You are given an integer array `matches` where `matches[i] = [winner_i, loser_i]` indicates that the player `winner_i` defeated player `loser_i` in a match.
-
-Return a list `answer` of size 2 where:
-
-- `answer[0]` is a list of all players that have not lost any matches.
-- `answer[1]` is a list of all players that have lost exactly one match.
-
-The values in the two lists should be returned in increasing order.
-
-**Note**:
-- You should only consider the players that have played at least one match.
-- The test cases will be generated such that no two matches will have the same outcome.
+Given an `n x n` matrix of integers, your task is to find the minimum sum of any falling path through the matrix. A falling path starts at any element in the first row and chooses the element in the next row that is either directly below or diagonally left/right. Specifically, if you are at position `(row, col)`, the next element can be chosen from `(row + 1, col - 1)`, `(row + 1, col)`, or `(row + 1, col + 1)` in the next row.
 
 ## Examples
 
 ### Example 1
 
-**Input**: matches = [[1, 3], [2, 3], [3, 6], [5, 6], [5, 7], [4, 5], [4, 8], [4, 9], [10, 4], [10, 9]]
+**Input:**
 
-**Output**:[[1, 2, 10], [4, 5, 7, 8]]
+```python
+matrix = [
+  [2, 1, 3],
+  [6, 5, 4],
+  [7, 8, 9]
+]
 
+Output: 13
 
-**Explanation**:
-- Players 1, 2, and 10 have not lost any matches.
-- Players 4, 5, 7, and 8 each have lost one match.
-- Players 3, 6, and 9 each have lost two matches.
+Explanation:
 
-Thus, `answer[0] = [1, 2, 10]` and `answer[1] = [4, 5, 7, 8]`.
+There are two falling paths with a minimum sum:
 
-### Example 2
+1 -> 4 -> 8 with a sum of 1 + 4 + 8 = 13
+1 -> 5 -> 7 with a sum of 1 + 5 + 7 = 13
 
-**Input**:matches = [[2, 3], [1, 3], [5, 4], [6, 4]]
+Example 2
+Input:
 
+matrix = [
+  [-19, 57],
+  [-40, -5]
+]
 
-**Output**:[[1, 2, 5, 6], []]
+Explanation:
 
-**Explanation**:
-- Players 1, 2, 5, and 6 have not lost any matches.
-- Players 3 and 4 each have lost two matches.
-
-Thus, `answer[0] = [1, 2, 5, 6]` and `answer[1] = []`.
-
-## Constraints
-
-- `1 <= matches.length <= 10^5`
-- `matches[i].length == 2`
-- `1 <= winner_i, loser_i <= 10^5`
-- All `matches[i]` are unique.
+The falling path with a minimum sum is -19 -> -40, with a sum of -19 + (-40) = -59.
