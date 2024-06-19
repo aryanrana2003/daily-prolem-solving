@@ -3,7 +3,8 @@ public:
     int findMaximizedCapital(int k, int w, vector<int>& profits, vector<int>& capital) {
         int n = profits.size();
 
-        vector<pair<int, int>> ls(n);
+
+        vector <pair<int, int>> ls(n);
         for (int i = 0; i < n; ++i) {
             ls[i] = {profits[i], capital[i]};
         }

@@ -17,6 +17,7 @@ public:
         vector<int> lost_ones;
         vector<int> not_lost;
 
+
         for(auto player : players){
             if(looses.find(player)== looses.end()){
                 not_lost.push_back(player);
