@@ -4,7 +4,6 @@ You are given an undirected star graph with n nodes labeled from 1 to n. A star 
 
 The function takes a 2D integer array edges where edges[i] = [ui, vi] represents an edge between nodes ui and vi. Your task is to return the index (label) of the central node in the star graph.
 
-## Examples:
 
 ## Example 1:
 Input: edges = [[1,2],[2,3],[4,2]]
