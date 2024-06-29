@@ -9,6 +9,7 @@ The function takes a 2D integer array edges where edges[i] = [ui, vi] represents
 Input: edges = [[1,2],[2,3],[4,2]]
 Output: 2 (Node 2 is connected to all other nodes)
 
+
 ## Example 2:
 Input: edges = [[1,2],[5,1],[1,3],[1,4]]
 Output: 1 (Node 1 is connected to all other nodes)
