@@ -42,4 +42,6 @@ secondMax - secondMin: Change the first two smallest to the second-to-last, and 
 maxElement - minElement: Move all elements to the smallest element (already calculated).
 Return Minimum Difference: We return the minimum value of minVal obtained from all scenarios.
 
+
+
 This approach avoids unnecessary sorting and efficiently identifies the key elements for calculating the minimum difference.
