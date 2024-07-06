@@ -8,7 +8,7 @@ For example, once the pillow reaches the nth person, they pass it to the n - 1th
 
 Given the two positive integers n and time, return the index of the person holding the pillow after time seconds.
 
-## Solution
+## Algorithm
  ```c++
  Start with the pillow at the first person (currentPillowPosition = 1).
  Begin counting time from 0 (currentTime = 0).
