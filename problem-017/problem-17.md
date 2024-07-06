@@ -9,8 +9,17 @@ For example, once the pillow reaches the nth person, they pass it to the n - 1th
 Given the two positive integers n and time, return the index of the person holding the pillow after time seconds.
 
 ## Solution
-The solution utilizes the concept of a circular list to model the pillow passing. It calculates the cycle length (total time for the pillow to visit everyone once) and the remaining time within the current cycle. Based on this information, it determines the direction of the pillow (forward or backward) and returns the index of the person holding it.
-
+ ```c++
+ Start with the pillow at the first person (currentPillowPosition = 1).
+ Begin counting time from 0 (currentTime = 0).
+ Set the initial direction of movement towards the end of the line (direction = 1).
+ Enter a loop that runs until currentTime is less than time.
+ Check if moving in the current direction (direction) will keep the pillow within the line boundaries (1 to n):
+ Move the pillow to the next position (currentPillowPosition + direction).
+ Increment the current time (currentTime++) since one second has passed.
+ Reverse the direction of movement (direction *= -1) if moving out of bounds.
+ After simulating for time seconds, return currentPillowPosition, which identifies the person holding the pillow after time seconds.
+ ```
 ## Included Files
 solution.cpp: Contains the c++ code for solving the problem.
 
