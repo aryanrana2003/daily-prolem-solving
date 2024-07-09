@@ -20,6 +20,8 @@ Given the two positive integers n and time, return the index of the person holdi
  Reverse the direction of movement (direction *= -1) if moving out of bounds.
  After simulating for time seconds, return currentPillowPosition, which identifies the person holding the pillow after time seconds.
  ```
+
+ 
 ## Included Files
 solution.cpp: Contains the c++ code for solving the problem.
 
