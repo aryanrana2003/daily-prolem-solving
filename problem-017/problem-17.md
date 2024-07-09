@@ -23,7 +23,6 @@ Given the two positive integers n and time, return the index of the person holdi
 ## Included Files
 solution.cpp: Contains the c++ code for solving the problem.
 
-
 n: The total number of people in the line.
 time: The number of seconds passed.
 ## Example:
