@@ -30,6 +30,5 @@ You are given a string `s` that consists of lowercase English letters and bracke
 
 1. **Stack Utilization:** Use a stack to keep track of characters. When encountering an opening parenthesis `(`, push it onto the stack. When encountering a closing parenthesis `)`, pop characters from the stack until an opening parenthesis `(` is encountered. Reverse the popped characters and push them back onto the stack.
 
-
 2. **String Construction:** After processing all characters in the string `s`, the stack will contain the final result in the correct order without any parentheses. Convert the stack to a string to obtain the result.
 
