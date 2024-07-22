@@ -26,7 +26,6 @@ You are given a string `s` that consists of lowercase English letters and bracke
 - `s` only contains lowercase English characters and parentheses.
 - It is guaranteed that all parentheses are balanced.
 
-
 ## Solution Approach
 
 1. **Stack Utilization:** Use a stack to keep track of characters. When encountering an opening parenthesis `(`, push it onto the stack. When encountering a closing parenthesis `)`, pop characters from the stack until an opening parenthesis `(` is encountered. Reverse the popped characters and push them back onto the stack.
