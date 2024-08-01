@@ -20,6 +20,7 @@ You are given a string `s` that consists of lowercase English letters and bracke
 - **Output:** `"leetcode"`
 - **Explanation:** First, the substring `"oc"` is reversed to `"co"`, then `"et(co)"` is reversed to `"etco"`, and finally, the whole string is reversed.
 
+
 ### Constraints
 
 - `1 <= s.length <= 2000`
